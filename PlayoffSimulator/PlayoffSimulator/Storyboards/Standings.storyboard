@@ -6,25 +6,37 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Standings-->
-        <scene sceneID="JcG-ch-aru">
+        <scene sceneID="T4Z-Qb-spP">
             <objects>
-                <viewController id="VDu-ch-X69" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5sS-Za-aB3">
+                <tableViewController id="874-zC-2vO" customClass="StandingsTableViewController" customModule="PlayoffSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4uP-6F-mJq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Kkq-qd-Ie1"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Standings" id="zEm-XC-vkc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vna-ba-tGw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamStandingCell" id="35X-4m-0Ts">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="35X-4m-0Ts" id="b7d-Gf-cEG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="874-zC-2vO" id="yC6-M7-qw4"/>
+                            <outlet property="delegate" destination="874-zC-2vO" id="GBU-i1-zAf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Standings" id="K1B-ET-pW2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5X-ys-724" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144.8" y="201.94902548725639"/>
+            <point key="canvasLocation" x="1175" y="202"/>
         </scene>
         <!--Standings-->
         <scene sceneID="N5q-zc-Yqh">
@@ -39,7 +51,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="VDu-ch-X69" kind="relationship" relationship="rootViewController" id="Y9C-hw-2Ca"/>
+                        <segue destination="874-zC-2vO" kind="relationship" relationship="rootViewController" id="wS6-Wd-PtS"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Px-Po-iRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
