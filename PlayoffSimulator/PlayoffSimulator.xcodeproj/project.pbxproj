@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		EB9F1FCA213DC41400541CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1FC9213DC41400541CEC /* AppDelegate.swift */; };
 		EB9F1FCC213DC41400541CEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1FCB213DC41400541CEC /* ViewController.swift */; };
-		EB9F1FCF213DC41400541CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F1FCD213DC41400541CEC /* Main.storyboard */; };
 		EB9F1FD2213DC41400541CEC /* PlayoffSimulator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1FD0213DC41400541CEC /* PlayoffSimulator.xcdatamodeld */; };
 		EB9F1FD4213DC41600541CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9F1FD3213DC41600541CEC /* Assets.xcassets */; };
 		EB9F1FD7213DC41600541CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F1FD5213DC41600541CEC /* LaunchScreen.storyboard */; };
 		EB9F1FE2213DC41600541CEC /* PlayoffSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1FE1213DC41600541CEC /* PlayoffSimulatorTests.swift */; };
 		EB9F1FED213DC41600541CEC /* PlayoffSimulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1FEC213DC41600541CEC /* PlayoffSimulatorUITests.swift */; };
+		EB9F2002213DC52B00541CEC /* TabBarHomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F2001213DC52B00541CEC /* TabBarHomeScreen.storyboard */; };
+		EB9F2006213DC5A700541CEC /* Standings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F2005213DC5A700541CEC /* Standings.storyboard */; };
+		EB9F200A213DC66B00541CEC /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F2009213DC66B00541CEC /* Schedule.storyboard */; };
+		EB9F2018213DCC0800541CEC /* StandingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F2017213DCC0800541CEC /* StandingsTableViewController.swift */; };
+		EB9F201B213DCDEA00541CEC /* StandingsDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F201A213DCDEA00541CEC /* StandingsDataModels.swift */; };
+		EB9F2024213DD49C00541CEC /* ReactiveReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9F2023213DD49C00541CEC /* ReactiveReSwift.framework */; };
+		EB9F2028213DD77700541CEC /* AppActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F2027213DD77700541CEC /* AppActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,6 @@
 		EB9F1FC6213DC41400541CEC /* PlayoffSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayoffSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9F1FC9213DC41400541CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB9F1FCB213DC41400541CEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB9F1FCE213DC41400541CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB9F1FD1213DC41400541CEC /* PlayoffSimulator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayoffSimulator.xcdatamodel; sourceTree = "<group>"; };
 		EB9F1FD3213DC41600541CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB9F1FD6213DC41600541CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		EB9F1FE8213DC41600541CEC /* PlayoffSimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayoffSimulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9F1FEC213DC41600541CEC /* PlayoffSimulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayoffSimulatorUITests.swift; sourceTree = "<group>"; };
 		EB9F1FEE213DC41600541CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9F2001213DC52B00541CEC /* TabBarHomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarHomeScreen.storyboard; sourceTree = "<group>"; };
+		EB9F2005213DC5A700541CEC /* Standings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Standings.storyboard; sourceTree = "<group>"; };
+		EB9F2009213DC66B00541CEC /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		EB9F2017213DCC0800541CEC /* StandingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewController.swift; sourceTree = "<group>"; };
+		EB9F201A213DCDEA00541CEC /* StandingsDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsDataModels.swift; sourceTree = "<group>"; };
+		EB9F2023213DD49C00541CEC /* ReactiveReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveReSwift.framework; path = PlayoffSimulator/Carthage/Build/iOS/ReactiveReSwift.framework; sourceTree = "<group>"; };
+		EB9F2027213DD77700541CEC /* AppActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9F2024213DD49C00541CEC /* ReactiveReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 				EB9F1FE0213DC41600541CEC /* PlayoffSimulatorTests */,
 				EB9F1FEB213DC41600541CEC /* PlayoffSimulatorUITests */,
 				EB9F1FC7213DC41400541CEC /* Products */,
+				EB9F2022213DD49C00541CEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +113,14 @@
 		EB9F1FC8213DC41400541CEC /* PlayoffSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				EB9F2015213DCBD900541CEC /* src */,
 				EB9F1FC9213DC41400541CEC /* AppDelegate.swift */,
 				EB9F1FCB213DC41400541CEC /* ViewController.swift */,
-				EB9F1FCD213DC41400541CEC /* Main.storyboard */,
 				EB9F1FD3213DC41600541CEC /* Assets.xcassets */,
 				EB9F1FD5213DC41600541CEC /* LaunchScreen.storyboard */,
 				EB9F1FD8213DC41600541CEC /* Info.plist */,
 				EB9F1FD0213DC41400541CEC /* PlayoffSimulator.xcdatamodeld */,
+				EB9F1FFE213DC4B100541CEC /* Storyboards */,
 			);
 			path = PlayoffSimulator;
 			sourceTree = "<group>";
@@ -128,6 +143,58 @@
 			path = PlayoffSimulatorUITests;
 			sourceTree = "<group>";
 		};
+		EB9F1FFE213DC4B100541CEC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F2001213DC52B00541CEC /* TabBarHomeScreen.storyboard */,
+				EB9F2005213DC5A700541CEC /* Standings.storyboard */,
+				EB9F2009213DC66B00541CEC /* Schedule.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EB9F2015213DCBD900541CEC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F2026213DD76A00541CEC /* Action */,
+				EB9F2019213DCDD600541CEC /* Model */,
+				EB9F2016213DCBE400541CEC /* Controllers */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EB9F2016213DCBE400541CEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F2017213DCC0800541CEC /* StandingsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EB9F2019213DCDD600541CEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F201A213DCDEA00541CEC /* StandingsDataModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB9F2022213DD49C00541CEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F2023213DD49C00541CEC /* ReactiveReSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB9F2026213DD76A00541CEC /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F2027213DD77700541CEC /* AppActions.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +205,7 @@
 				EB9F1FC2213DC41400541CEC /* Sources */,
 				EB9F1FC3213DC41400541CEC /* Frameworks */,
 				EB9F1FC4213DC41400541CEC /* Resources */,
+				EB9F2025213DD4A900541CEC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,9 +300,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9F2006213DC5A700541CEC /* Standings.storyboard in Resources */,
 				EB9F1FD7213DC41600541CEC /* LaunchScreen.storyboard in Resources */,
 				EB9F1FD4213DC41600541CEC /* Assets.xcassets in Resources */,
-				EB9F1FCF213DC41400541CEC /* Main.storyboard in Resources */,
+				EB9F2002213DC52B00541CEC /* TabBarHomeScreen.storyboard in Resources */,
+				EB9F200A213DC66B00541CEC /* Schedule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +324,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EB9F2025213DD4A900541CEC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/PlayoffSimulator/Carthage/Build/iOS/ReactiveReSwift.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PlayoffSimulator/ReactiveReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB9F1FC2213DC41400541CEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9F201B213DCDEA00541CEC /* StandingsDataModels.swift in Sources */,
 				EB9F1FCC213DC41400541CEC /* ViewController.swift in Sources */,
 				EB9F1FCA213DC41400541CEC /* AppDelegate.swift in Sources */,
 				EB9F1FD2213DC41400541CEC /* PlayoffSimulator.xcdatamodeld in Sources */,
+				EB9F2018213DCC0800541CEC /* StandingsTableViewController.swift in Sources */,
+				EB9F2028213DD77700541CEC /* AppActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +388,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EB9F1FCD213DC41400541CEC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB9F1FCE213DC41400541CEC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EB9F1FD5213DC41600541CEC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,6 +518,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlayoffSimulator/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PlayoffSimulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +539,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlayoffSimulator/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PlayoffSimulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
