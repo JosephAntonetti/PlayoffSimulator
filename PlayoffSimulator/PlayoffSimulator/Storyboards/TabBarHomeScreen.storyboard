@@ -31,7 +31,7 @@
         <scene sceneID="8Ij-HL-L4F">
             <objects>
                 <viewControllerPlaceholder storyboardName="Schedule" id="JW7-qR-B78" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" id="WEh-5D-mvr"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="schedule" id="WEh-5D-mvr"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yf3-pK-Mo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,11 +41,15 @@
         <scene sceneID="bpo-fB-GdD">
             <objects>
                 <viewControllerPlaceholder storyboardName="Standings" id="0MT-uR-K8G" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Standings" id="KSM-Nb-hz5"/>
+                    <tabBarItem key="tabBarItem" title="Standings" image="standings" id="KSM-Nb-hz5"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBF-Jr-D95" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="430" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="schedule" width="30" height="30"/>
+        <image name="standings" width="30" height="30"/>
+    </resources>
 </document>

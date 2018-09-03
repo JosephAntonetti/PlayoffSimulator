@@ -30,7 +30,7 @@
         <scene sceneID="dXW-98-t0W">
             <objects>
                 <navigationController storyboardIdentifier="ScheduleNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ecu-UC-4Ku" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" id="k3e-dR-WUL"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="schedule" selectedImage="schedule" id="k3e-dR-WUL"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="ScheduleNavigationBar" insetsLayoutMarginsFromSafeArea="NO" id="VPZ-ly-CiT">
@@ -47,4 +47,7 @@
             <point key="canvasLocation" x="333.60000000000002" y="59.820089955022496"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="schedule" width="30" height="30"/>
+    </resources>
 </document>
