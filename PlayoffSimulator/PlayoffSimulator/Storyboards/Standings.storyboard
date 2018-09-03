@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="utb-Hb-Pd9">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Standings-->
+        <scene sceneID="JcG-ch-aru">
+            <objects>
+                <viewController id="VDu-ch-X69" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5sS-Za-aB3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Kkq-qd-Ie1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Standings" id="zEm-XC-vkc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vna-ba-tGw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144.8" y="201.94902548725639"/>
+        </scene>
+        <!--Standings-->
+        <scene sceneID="N5q-zc-Yqh">
+            <objects>
+                <navigationController storyboardIdentifier="StandingsNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="utb-Hb-Pd9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Standings" image="standings" selectedImage="standings" id="MBo-VG-AEv" customClass="StandingsTabBarItem"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="StandingsNavigationBar" insetsLayoutMarginsFromSafeArea="NO" id="XEu-rf-RTV">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VDu-ch-X69" kind="relationship" relationship="rootViewController" id="Y9C-hw-2Ca"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Px-Po-iRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="201.94902548725639"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="standings" width="30" height="30"/>
+    </resources>
+</document>
