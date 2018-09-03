@@ -33,8 +33,8 @@
                     <tabBarItem key="tabBarItem" title="Standings" image="standings" selectedImage="standings" id="MBo-VG-AEv" customClass="StandingsTabBarItem"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="StandingsNavigationBar" insetsLayoutMarginsFromSafeArea="NO" id="XEu-rf-RTV">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="StandingsNavigationBar" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="XEu-rf-RTV">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
