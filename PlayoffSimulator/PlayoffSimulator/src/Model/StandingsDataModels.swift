@@ -11,18 +11,12 @@ import Foundation
 struct Team {
     let id: Int
     let name: String
+    let division: String
     let wins: Int
     let ties: Int
     let losses: Int
 }
 
-struct Division {
-    let id: Int
-    let name: String
-    let teams: [Int]
-}
-
 struct AppState {
     let teams: [Team]
-    let divisions: [Division]
 }

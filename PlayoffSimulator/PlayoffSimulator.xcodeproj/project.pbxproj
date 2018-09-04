@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3E86EF213E168D00C63DF2 /* Teams.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB3E86EE213E168D00C63DF2 /* Teams.plist */; };
+		EB3E86F1213E1DAF00C63DF2 /* DivisionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E86F0213E1DAF00C63DF2 /* DivisionFunctions.swift */; };
+		EB84B846213DDC0200ADB41D /* InitialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB84B845213DDC0200ADB41D /* InitialState.swift */; };
 		EB9F1FCA213DC41400541CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1FC9213DC41400541CEC /* AppDelegate.swift */; };
 		EB9F1FCC213DC41400541CEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1FCB213DC41400541CEC /* ViewController.swift */; };
 		EB9F1FD2213DC41400541CEC /* PlayoffSimulator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1FD0213DC41400541CEC /* PlayoffSimulator.xcdatamodeld */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB3E86EE213E168D00C63DF2 /* Teams.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Teams.plist; sourceTree = "<group>"; };
+		EB3E86F0213E1DAF00C63DF2 /* DivisionFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionFunctions.swift; sourceTree = "<group>"; };
+		EB84B845213DDC0200ADB41D /* InitialState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialState.swift; sourceTree = "<group>"; };
 		EB9F1FC6213DC41400541CEC /* PlayoffSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayoffSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9F1FC9213DC41400541CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB9F1FCB213DC41400541CEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +95,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB3E86F2213E218100C63DF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EB9F1FBD213DC41400541CEC = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +134,7 @@
 				EB9F1FD8213DC41600541CEC /* Info.plist */,
 				EB9F1FD0213DC41400541CEC /* PlayoffSimulator.xcdatamodeld */,
 				EB9F1FFE213DC4B100541CEC /* Storyboards */,
+				EB3E86EE213E168D00C63DF2 /* Teams.plist */,
 			);
 			path = PlayoffSimulator;
 			sourceTree = "<group>";
@@ -156,6 +170,7 @@
 		EB9F2015213DCBD900541CEC /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EB3E86F2213E218100C63DF2 /* Views */,
 				EB9F2026213DD76A00541CEC /* Action */,
 				EB9F2019213DCDD600541CEC /* Model */,
 				EB9F2016213DCBE400541CEC /* Controllers */,
@@ -175,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				EB9F201A213DCDEA00541CEC /* StandingsDataModels.swift */,
+				EB84B845213DDC0200ADB41D /* InitialState.swift */,
+				EB3E86F0213E1DAF00C63DF2 /* DivisionFunctions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +320,7 @@
 				EB9F2006213DC5A700541CEC /* Standings.storyboard in Resources */,
 				EB9F1FD7213DC41600541CEC /* LaunchScreen.storyboard in Resources */,
 				EB9F1FD4213DC41600541CEC /* Assets.xcassets in Resources */,
+				EB3E86EF213E168D00C63DF2 /* Teams.plist in Resources */,
 				EB9F2002213DC52B00541CEC /* TabBarHomeScreen.storyboard in Resources */,
 				EB9F200A213DC66B00541CEC /* Schedule.storyboard in Resources */,
 			);
@@ -347,7 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3E86F1213E1DAF00C63DF2 /* DivisionFunctions.swift in Sources */,
 				EB9F201B213DCDEA00541CEC /* StandingsDataModels.swift in Sources */,
+				EB84B846213DDC0200ADB41D /* InitialState.swift in Sources */,
 				EB9F1FCC213DC41400541CEC /* ViewController.swift in Sources */,
 				EB9F1FCA213DC41400541CEC /* AppDelegate.swift in Sources */,
 				EB9F1FD2213DC41400541CEC /* PlayoffSimulator.xcdatamodeld in Sources */,
@@ -518,6 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8EWD7S57X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PlayoffSimulator/Carthage/Build/iOS",
@@ -539,6 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8EWD7S57X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PlayoffSimulator/Carthage/Build/iOS",

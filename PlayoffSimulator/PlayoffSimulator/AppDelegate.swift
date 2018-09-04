@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import ReactiveReSwift
 
-let initialState = AppState(teams:[], divisions:[Division(id:0, name: "test", teams:[1,2,3,4])])
+let initialState = initializeState()
 
 let mainStore = Store(
     reducer: reducer,
